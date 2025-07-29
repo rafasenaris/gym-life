@@ -20,19 +20,25 @@ nav{
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    background-color: #0397ED;
+    background-color: var(--background-primario);
     height: 70px;
     width: 100vw;
     padding-right: 50px;
-    gap: 30px;
 
-    & a {
+    & ul{
+        list-style: none;
         display: flex;
-        color:var(--titulo-primario);
-        text-decoration: none;
+        flex-direction: row;
+        gap: 40px;
+    
+        & a {
+            display: flex;
+            color:var(--titulo-primario);
+            text-decoration: none;
 
-        &:hover{
-            color: var(--titulo-secundario);
+            &:hover{
+                color: var(--titulo-secundario);
+            }
         }
         
     }
