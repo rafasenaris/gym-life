@@ -3,3 +3,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+:root{
+    --titulo-primario: #ffffff;
+    --titulo-secundario: #C0E830;
+    --titulo-terciario: #000000;
+    --background-primario: #0397ED;
+    --background-secundario: #C0E830;
+    --background-terciario:#ffffff;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    background-color: #0397ED;
+    height: 70px;
+    width: 100vw;
+    padding-right: 50px;
+    gap: 30px;
+
+    & a {
+        display: flex;
+        color:var(--titulo-primario);
+        text-decoration: none;
+
+        &:hover{
+            color: var(--titulo-secundario);
+        }
+        
+    }
