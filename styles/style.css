@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* variaveis */
 
 :root{
     --titulo-primario: #ffffff;
@@ -14,15 +15,16 @@
     --background-terciario:#ffffff;
     
 }
-
+/* MENU DE NAVEGAÇÃO SUPERIOR */
 nav{
+    
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
     background-color: var(--background-primario);
     height: 70px;
-    width: 100vw;
+    width: 100%;
     padding-right: 50px;
 
     & ul{
@@ -40,6 +42,24 @@ nav{
                 color: var(--titulo-secundario);
             }
         }
+        
+    }
+}
+
+/* MAIN E BANNER PRINCIPAL ESTILO SMARTFIT, POREM TEREI QUE REFAZER A IMAGEM*/
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+
+    & img{
+        width: 100%;
+        border-radius: 2rem;
         
     }
 }
