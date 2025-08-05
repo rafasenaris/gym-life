@@ -7,12 +7,12 @@
 /* variaveis */
 
 :root{
-    --titulo-primario: #ffffff;
-    --titulo-secundario: #C0E830;
-    --titulo-terciario: #000000;
-    --background-primario: #0397ED;
-    --background-secundario: #C0E830;
-    --background-terciario:#ffffff;
+    --titulo-primeiro: #ffffff;
+    --titulo-secundo: #C0E830;
+    --titulo-terceiro: #0397ed;
+    --background-primeiro: #0397ed;
+    --background-secundo: #F0BD21;
+    --background-terceiro:#ffffff;
     
 }
 /* MENU DE NAVEGAÇÃO SUPERIOR */
@@ -22,10 +22,11 @@ nav{
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    background-color: var(--background-primario);
-    height: 70px;
+    background-color: white;
+    height: 80px;
     width: 100%;
     padding-right: 50px;
+    box-shadow: 0px 2px 10px grey;
 
     & ul{
         list-style: none;
@@ -35,16 +36,17 @@ nav{
     
         & a {
             display: flex;
-            color:var(--titulo-primario);
+            color:var(--titulo-terceiro);
             text-decoration: none;
 
             &:hover{
-                color: var(--titulo-secundario);
+                color: var(--titulo-secundo);
             }
         }
         
     }
 }
+
 
 /* MAIN E BANNER PRINCIPAL ESTILO SMARTFIT, POREM TEREI QUE REFAZER A IMAGEM*/
 
@@ -54,12 +56,13 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    
     
 
     & img{
         width: 100%;
-        border-radius: 2rem;
+        padding: 1rem;
+        border-radius: 40px;
         
     }
 }
