@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,29 +10,37 @@
 
 :root{
     --titulo-primeiro: #ffffff;
-    --titulo-secundo: #C0E830;
-    --titulo-terceiro: #0397ed;
-    --background-primeiro: #0397ed;
-    --background-secundo: #F0BD21;
+    --titulo-secundo: #ffa10d;
+    --titulo-terceiro: #0597f2;
+    --background-primeiro: #0597f2;
+    --background-secundo: #ffa10d;
     --background-terceiro:#ffffff;
+    --background-neutro: #202020;
     
 }
+
+body{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 /* MENU DE NAVEGAÇÃO SUPERIOR */
 nav{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #ffffff;
     height: 80px;
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 4rem;
     box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.5);
 
+    /* imagem de icone da nav
+    alterar o icone com uma sombra pra poder destacar melhor */
     & img{
         width: 80px;
-        
     }
 
     & ul{
@@ -48,26 +58,58 @@ nav{
                 color: var(--titulo-secundo);
             }
         }
-        
     }
 }
 
 
-/* MAIN E BANNER PRINCIPAL ESTILO SMARTFIT, POREM TEREI QUE REFAZER A IMAGEM*/
+/* MAIN E BANNER PRINCIPAL ESTILO SMARTFIT*/
 
 main{
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding: 1rem;
     
 
     & img{
         width: 100%;
-        padding: 1rem;
         border-radius: 40px;
         
     }
 }
+
+/* modalidades e seus cards */
+
+#modalidades{
+    
+    & #bloco-cards{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* CLASSES */
+/*section config*/
+.section-base{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem;
+}
+
+
+/* padrão de titulos de sections */
+.titulo-section{
+    font-size: 1.6rem;
+    font-weight: 700;
+    
+}
+
+.sub-titulo-section{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+/* padrão de titulos de cards */
+
