@@ -16,11 +16,12 @@
     --background-secundo: #ffa10d;
     --background-terceiro:#ffffff;
     --background-neutro: #202020;
+    --font-family-base: "poppins", sans-serif;
     
 }
 
 body{
-    font-family: 'poppins', sans-serif;
+    font-family: var(--font-family-base);
     font-weight: 500;
     font-size: 1rem;
 }
@@ -81,13 +82,6 @@ main{
 
 /* modalidades e seus cards */
 
-#modalidades{
-    
-    & #bloco-cards{
-        display: flex;
-        flex-direction: row;
-    }
-}
 
 /* CLASSES */
 /*section config*/
@@ -95,21 +89,96 @@ main{
     display: flex;
     flex-direction: column;
     padding: 1rem 4rem;
+    
+    &.section-modalidades{
+        height: 600px;
+    }
+
+    &.section-planos{
+        height: 600px;
+    }
+
 }
 
+/* CARDS*/
+/* bloco cards */
+.bloco-cards-base{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    &.bloco-cards-modalidades{
+        justify-content: center;
+        height: 60%;
+    }
+
+    &.bloco-cards-planos{
+        justify-content: center;
+        height: 100%;
+    }
+
+}
+
+/* card de modalidades*/
+.card-modalidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 20%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--background-secundo);
+}
+
+/* card de planos */
+.card-planos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--background-primeiro);
+
+}
+
+/* padrão de titulos de cards */
+.titulo-card{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.sub-titulo-card{
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+.descricao-card{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.valor-card{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
 
 /* padrão de titulos de sections */
 .titulo-section{
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
     
 }
 
 .sub-titulo-section{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
 
 }
-/* padrão de titulos de cards */
 
