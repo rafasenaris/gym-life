@@ -88,13 +88,17 @@ main{
 .section-base{
     display: flex;
     flex-direction: column;
-    padding: 1rem 4rem;
+    padding: 1rem 6rem;
     
     &.section-modalidades{
         height: 600px;
     }
 
     &.section-planos{
+        height: 600px;
+    }
+
+    &.section-unidades{
         height: 600px;
     }
 
@@ -118,6 +122,10 @@ main{
         height: 100%;
     }
 
+    &.bloco-cards-unidades{
+        justify-content: center;
+        height: 70%;
+    }
 }
 
 /* card de modalidades*/
@@ -126,6 +134,18 @@ main{
     flex-direction: column;
     justify-content: end;
     width: 20%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--background-secundo);
+}
+
+/* card de unidades */
+.card-unidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
     height: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
