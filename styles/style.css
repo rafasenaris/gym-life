@@ -102,6 +102,12 @@ main{
         height: 600px;
     }
 
+    &.section-footer{
+        height: 600px;
+        background-color: var(--background-secundo);
+        box-shadow: 0px -4px 10px rgba(128, 128, 128, 0.5);
+    }
+
 }
 
 /* CARDS*/
