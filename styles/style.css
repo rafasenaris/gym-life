@@ -90,6 +90,7 @@ main{
     flex-direction: column;
     padding: 1rem 6rem;
     
+    
     &.section-modalidades{
         height: 600px;
     }
@@ -198,13 +199,13 @@ main{
 .titulo-section{
     font-size: 2rem;
     font-weight: 600;
-    
+    margin-bottom: 10px;
 }
 
 .sub-titulo-section{
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 
 }
 
